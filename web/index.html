@@ -1,419 +1,336 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Geurin restaurant</title>
+  <title>Geurin Restaurant</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Alfa Slab One (title/headings) -->
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <!-- Comfortaa (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/x-icon " href="image/icon.png">
+  <!-- Font Awesome 4.7 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="image/icon.png">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand font-alfa-slab " href="#">Geurin</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand font-alfa-slab" href="#">Geurin</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active font-alfa-slab" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-alfa-slab" href="#about">about</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link font-alfa-slab" href="#menu">menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-alfa-slab" href="#testimoni">testimoni</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-alfa-slab" href="#">gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-alfa-slab" href="#">contact</a>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active font-alfa-slab" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link font-alfa-slab" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link font-alfa-slab" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link font-alfa-slab" href="#testimoni">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link font-alfa-slab" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link font-alfa-slab" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-book w-100" href="#contact">Book a table</a>
           </li>
         </ul>
-
-        <button class="btn btn-book">Book a table</button>
-        </form>
       </div>
-  </nav>
-  <div>
-
-  </div>
-  <div class="banner">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <div class="hero-text font-alfa-slab">
-          <p>ENJOY YOUR</p>
-          <P>HEALTHY</P>
-          <P>DELICIOUS</P>
-          <P>FOOD</P>
-
-        </div>
-
-      </div>
-      <div class="col-md-6 text center banner-img">
-        <img src="image/sushi.png" alt="sushi plate class=sushi-img">
-
-      </div>
-
-
-
     </div>
-  </div>
+  </nav>
 
+  <!-- Hero / Banner -->
+  <header class="banner py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <div class="hero-text font-alfa-slab">
+            <p>ENJOY YOUR</p>
+            <p>HEALTHY</p>
+            <p>DELICIOUS</p>
+            <p>FOOD</p>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="image/sushi.png" alt="Sushi plate" class="img-fluid sushi-img">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
   <section class="about-section" id="about">
-    <div class="container font-alfa-slab">
-      <h2>about us</h2>
-      <div class="row align-items-center">
-        <div class="col-md-6">
+    <div class="container">
+      <h2 class="font-alfa-slab section-title">About Us</h2>
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
           <p class="about-text font-comforta">
             <span class="check-icon">✔️</span>Welcome to Geurin restaurant, your go-to destination for fresh, flavorful,
             and artfully crafted sushi. Founded with a deep appreciation for Japanese culinary tradition, our restaurant
-            brings together authentic taste, quality ingredients, and a cozy, modern dining experience.
-            At the heart of our menu are our signature rolls — carefully prepared to delight both newcomers and sushi
-            enthusiasts alike. Try the timeless California Roll, with its perfect balance of crab stick, avocado, and
-            cucumber, all wrapped in seasoned rice and nori. Indulge in the creamy, rich flavor of our Salmon Mentai,
-            topped with our special mentai sauce and lightly torched to bring out its smoky umami notes. Savor the
-            subtle sweetness of our Crab Stick Roll, or turn up the heat with the spicy, creamy explosion of our
-            Dynamite Roll — a favorite for those who like bold flavors.
-
+            brings together authentic taste, quality ingredients, and a cozy, modern dining experience. At the heart of our
+            menu are our signature rolls — carefully prepared to delight both newcomers and sushi enthusiasts alike.
           </p>
           <p class="about-text font-comforta">
             <span class="check-icon">✔️</span>We believe that sushi is not just food, but an experience — one that
-            celebrates freshness, balance, and the beauty of simplicity. That’s why we take great care in selecting only
-            the freshest ingredients, from high-quality seafood to premium rice and house-made sauces. Every roll is
-            handcrafted with precision and passion by our skilled chefs, ensuring consistency, taste, and satisfaction
-            in every bite.
-            Our restaurant is designed to make you feel right at home. Whether you're here for a quick lunch, a casual
-            dinner with friends, or a special occasion, we offer a warm and inviting space where good food and good
-            company come together. We also offer takeout and delivery options, so you can enjoy your favorite rolls
-            wherever you are.
-            Thank you for choosing Geurin. We are proud to serve you, and we look forward to sharing the joy of sushi
-            with you — one roll at a time.
-            ________________________________________
-
+            celebrates freshness, balance, and the beauty of simplicity. Every roll is handcrafted with precision and passion
+            by our skilled chefs. Dine in, take out, or get delivery — enjoy Geurin anywhere.
           </p>
+
           <div class="mt-4">
-            <div class="about-btn font-comforta">
-              book a table
+            <a href="#contact" class="about-btn font-comforta d-inline-block text-decoration-none">
+              Book a table
               <span>+2 34567890</span>
-            </div>
-
+            </a>
           </div>
-
-        </div>
-        <div class="col-md-6 text-center">
-          <img src="image/sushiabout.jpg" alt="sushi image" class="img-fluid">
-
         </div>
 
+        <div class="col-lg-6 text-center">
+          <img src="image/sushiabout.jpg" alt="Sushi presentation" class="img-fluid rounded-4 shadow-sm">
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Menu -->
   <section class="menu-section" id="menu">
-    <div class="container font-alfa-slab">
-      <h2 class="menu-title">CHECK OUR MENU</h2>
-      <div class="row align-items-center">
-        <div class="col-md-6 menu-item font-comforta">
-          <img src="image/sushi-crabstick.jpg" alt="crab stick roll" class="menu-img">
-          <div>crab stick roll</div>
-          <div> IDR 66K</div>
+    <div class="container">
+      <h2 class="font-alfa-slab section-title">Check Our Menu</h2>
 
-
-        </div>
-        <div class="col-md-6 menu-item font-comforta">
-          <img src="image/sushi-salmon.jpg" alt="salmon mentai" class="menu-img">
-          <div>salmon mentai</div>
-          <div> IDR 80k</div>
-
-
-        </div>
-        <div class="col-md-6 menu-item font-comforta">
-          <img src="image/sushi-dynamate.jpg" alt="dynamate roll" class="menu-img">
-          <div>dynamate roll</div>
-          <div> IDR 75k</div>
-
-
-        </div>
-        <div class="col-md-6 menu-item font-comforta">
-          <img src="image/sushi-california.jpg" alt="california roll" class="menu-img">
-          <div>california roll</div>
-          <div> IDR 77k</div>
-
-
+      <div class="row g-4">
+        <!-- Item -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="menu-card h-100 text-center p-3 rounded-4 shadow-sm">
+            <img src="image/sushi-crabstick.jpg" alt="Crab stick roll" class="menu-img mx-auto d-block">
+            <div class="menu-name font-comforta mt-3">Crab Stick Roll</div>
+            <div class="menu-price font-comforta">IDR 66K</div>
+          </div>
         </div>
 
+        <div class="col-sm-6 col-lg-3">
+          <div class="menu-card h-100 text-center p-3 rounded-4 shadow-sm">
+            <img src="image/sushi-salmon.jpg" alt="Salmon mentai" class="menu-img mx-auto d-block">
+            <div class="menu-name font-comforta mt-3">Salmon Mentai</div>
+            <div class="menu-price font-comforta">IDR 80K</div>
+          </div>
+        </div>
 
+        <div class="col-sm-6 col-lg-3">
+          <div class="menu-card h-100 text-center p-3 rounded-4 shadow-sm">
+            <img src="image/sushi-dynamate.jpg" alt="Dynamite roll" class="menu-img mx-auto d-block">
+            <div class="menu-name font-comforta mt-3">Dynamite Roll</div>
+            <div class="menu-price font-comforta">IDR 75K</div>
+          </div>
+        </div>
 
-
-
-
-
+        <div class="col-sm-6 col-lg-3">
+          <div class="menu-card h-100 text-center p-3 rounded-4 shadow-sm">
+            <img src="image/sushi-california.jpg" alt="California roll" class="menu-img mx-auto d-block">
+            <div class="menu-name font-comforta mt-3">California Roll</div>
+            <div class="menu-price font-comforta">IDR 77K</div>
+          </div>
+        </div>
       </div>
-
     </div>
-    </div>
-    </div>
-
   </section>
 
+  <!-- Testimonials -->
+  <section class="about-section" id="testimoni" aria-labelledby="testimonials-title">
+    <div class="container">
+      <h2 id="testimonials-title" class="font-alfa-slab section-title">Testimonials</h2>
+      <p class="text-center font-comforta mb-4">What are they saying about us</p>
 
-  <section class="about-section" id="testimoni">
-    <div class="container font-alfa-slab">
-      <h2>TESTIMONIALS</h2>
-      <h2>what are they saying about us</h2>
       <div class="owl-carousel owl-theme">
+        <!-- Item 1 -->
         <div class="item">
-          <div class="card" style="width: 24rem;">
+          <div class="card border-0 shadow-sm rounded-4">
             <div class="card-body">
-              <h5 class="card-title">
-                <i class="fa fa-star" style="font-size:30px;color:rgb(253, 132, 19);"></i>
-                <i class="fa fa-star" style="font-size:30px;color:rgb(253, 132, 19);"></i>
-                <i class="fa fa-star" style="font-size:30px;color:rgb(253, 132, 19);"></i>
-                <i class="fa fa-star" style="font-size:30px;color:rgb(253, 132, 19);"></i>
-                <i class="fa fa-star" style="font-size:30px;color:rgb(253, 132, 19);"></i>
-              </h5>
-              <div class="row">
-                <div class="col-md-8 font-comforta">
-                  <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority
-                    have suffered alteration in some form, by injected humour, or randomised words which</p>
-
+              <div class="mb-2" aria-label="rating 5 of 5">
+                <i class="fa fa-star star"></i><i class="fa fa-star star"></i><i class="fa fa-star star"></i><i class="fa fa-star star"></i><i class="fa fa-star star"></i>
+              </div>
+              <div class="row g-3 align-items-center">
+                <div class="col-8">
+                  <p class="card-text font-comforta">There are many variations of passages of Lorem Ipsum available,
+                    but the majority have suffered alteration in some form.</p>
                 </div>
-                <div class="col-md-4">
-                  <p class="text-center card-text">lia</p>
-                  <img class="img-testimoni" src="image/testi-1.jpg" alt="">
-
+                <div class="col-4 text-center">
+                  <p class="mb-2 font-comforta fw-bold">Lia</p>
+                  <img class="img-testimoni" src="image/testi-1.jpg" alt="Lia photo">
                 </div>
               </div>
-
             </div>
           </div>
         </div>
 
+        <!-- Item 2 -->
         <div class="item">
-          <div class="card" style="width: 24rem;">
+          <div class="card border-0 shadow-sm rounded-4">
             <div class="card-body">
-              <h5 class="card-title">
-                <i class="fa fa-star" style="font-size:30px;color:rgb(253, 132, 19);"></i>
-                <i class="fa fa-star" style="font-size:30px;color:rgb(253, 132, 19);"></i>
-                <i class="fa fa-star" style="font-size:30px;color:rgb(253, 132, 19);"></i>
-                <i class="fa fa-star" style="font-size:30px;color:rgb(253, 132, 19);"></i>
-                <i class="fa fa-star-o" style="font-size:30px;"></i>
-              </h5>
-              <div class="row">
-                <div class="col-md-8 font-comforta">
-                  <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority
-                    have suffered alteration in some form, by injected humour, or randomised words which</p>
-
+              <div class="mb-2" aria-label="rating 4 of 5">
+                <i class="fa fa-star star"></i><i class="fa fa-star star"></i><i class="fa fa-star star"></i><i class="fa fa-star star"></i><i class="fa fa-star-o star-o"></i>
+              </div>
+              <div class="row g-3 align-items-center">
+                <div class="col-8">
+                  <p class="card-text font-comforta">There are many variations of passages of Lorem Ipsum available,
+                    but the majority have suffered alteration.</p>
                 </div>
-                <div class="col-md-4">
-                  <p class="text-center card-text">ryan</p>
-                  <img class="img-testimoni" src="image/testi-2.jpg" alt="">
-
+                <div class="col-4 text-center">
+                  <p class="mb-2 font-comforta fw-bold">Ryan</p>
+                  <img class="img-testimoni" src="image/testi-2.jpg" alt="Ryan photo">
                 </div>
               </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card" style="width: 24rem;">
-            <div class="card-body">
-              <h5 class="card-title">
-                <i class="fa fa-star" style="font-size:30px;color:rgb(253, 132, 19);"></i>
-                <i class="fa fa-star" style="font-size:30px;color:rgb(253, 132, 19);"></i>
-                <i class="fa fa-star" style="font-size:30px;color:rgb(253, 132, 19);"></i>
-                <i class="fa fa-star-o" style="font-size:30px;"></i>
-                <i class="fa fa-star-o" style="font-size:30px;"></i>
-              </h5>
-              <div class="row">
-                <div class="col-md-8 font-comforta">
-                  <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority
-                    have suffered alteration in some form, by injected humour, or randomised words which</p>
-
-                </div>
-                <div class="col-md-4">
-                  <p class="text-center card-text">rio</p>
-                  <img class="img-testimoni" src="image/testi-2.jpg" alt="">
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card" style="width: 24rem;">
-            <div class="card-body">
-              <h5 class="card-title">
-                <i class="fa fa-star" style="font-size:30px;color:rgb(253, 132, 19);"></i>
-                <i class="fa fa-star" style="font-size:30px;color:rgb(253, 132, 19);"></i>
-                <i class="fa fa-star-o" style="font-size:30px;"></i>
-                <i class="fa fa-star-o" style="font-size:30px;"></i>
-                <i class="fa fa-star-o" style="font-size:30px;"></i>
-              </h5>
-              <div class="row">
-                <div class="col-md-8 font-comforta">
-                  <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority
-                    have suffered alteration in some form, by injected humour, or randomised words which</p>
-
-                </div>
-                <div class="col-md-4">
-                  <p class="text-center card-text">amel</p>
-                  <img class="img-testimoni" src="image/testi-1.jpg" alt="">
-
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
 
+        <!-- Item 3 -->
+        <div class="item">
+          <div class="card border-0 shadow-sm rounded-4">
+            <div class="card-body">
+              <div class="mb-2" aria-label="rating 3 of 5">
+                <i class="fa fa-star star"></i><i class="fa fa-star star"></i><i class="fa fa-star star"></i><i class="fa fa-star-o star-o"></i><i class="fa fa-star-o star-o"></i>
+              </div>
+              <div class="row g-3 align-items-center">
+                <div class="col-8">
+                  <p class="card-text font-comforta">There are many variations of passages of Lorem Ipsum available.</p>
+                </div>
+                <div class="col-4 text-center">
+                  <p class="mb-2 font-comforta fw-bold">Rio</p>
+                  <img class="img-testimoni" src="image/testi-2.jpg" alt="Rio photo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-
-      </div>
-
+        <!-- Item 4 -->
+        <div class="item">
+          <div class="card border-0 shadow-sm rounded-4">
+            <div class="card-body">
+              <div class="mb-2" aria-label="rating 2 of 5">
+                <i class="fa fa-star star"></i><i class="fa fa-star star"></i><i class="fa fa-star-o star-o"></i><i class="fa fa-star-o star-o"></i><i class="fa fa-star-o star-o"></i>
+              </div>
+              <div class="row g-3 align-items-center">
+                <div class="col-8">
+                  <p class="card-text font-comforta">There are many variations of passages of Lorem Ipsum available.</p>
+                </div>
+                <div class="col-4 text-center">
+                  <p class="mb-2 font-comforta fw-bold">Amel</p>
+                  <img class="img-testimoni" src="image/testi-1.jpg" alt="Amel photo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /owl-carousel -->
     </div>
-
   </section>
 
-  <section class="contact-section">
-    <div class="container font-alfa-slab">
-      <h2>NEED HELP ? CONTACT US</h2>
-      <div>
+  <!-- Gallery (optional anchor only for nav) -->
+  <section id="gallery" class="py-0"></section>
+
+  <!-- Contact -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="font-alfa-slab section-title">Need Help? Contact Us</h2>
+
+      <div class="ratio ratio-21x9 rounded-4 overflow-hidden shadow-sm mb-4">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.0844229906747!2d106.78841263274667!3d-6.241465462840663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f113dd15fa11%3A0x129f2b406a9c52a7!2sRS%20Muhammadiyah%20Taman%20Puring!5e0!3m2!1sid!2sid!4v1753510153472!5m2!1sid!2sid"
-          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Geurin Map"></iframe>
       </div>
 
-      <div class="row text-center  contact-info">
-        <div class="col-md-3 font-comforta">
-          <p>
-            <i class="fa fa-map-marker"></i> <strong>address</strong> <br>Jln.ciputat raya
-          </p>
+      <div class="row text-center contact-info g-3 mb-4">
+        <div class="col-6 col-md-3 font-comforta">
+          <p><i class="fa fa-map-marker"></i> <strong>Address</strong><br>Jln. Ciputat Raya</p>
         </div>
-
-        <div class="col-md-3 font-comforta">
-          <p>
-            <i class="fa fa-envelope-o"></i> <strong>email us</strong> <br> example@info.com
-          </p>
+        <div class="col-6 col-md-3 font-comforta">
+          <p><i class="fa fa-envelope-o"></i> <strong>Email</strong><br>example@info.com</p>
         </div>
-
-        <div class="col-md-3 font-comforta">
-          <p>
-            <i class="fa fa-phone"></i> <strong>call us</strong> <br>+1 1234567
-          </p>
+        <div class="col-6 col-md-3 font-comforta">
+          <p><i class="fa fa-phone"></i> <strong>Call</strong><br>+1 1234567</p>
         </div>
-
-        <div class="col-md-3 font-comforta">
-          <p>
-            <i class="fa fa-clock-o"></i> <strong>opening hours</strong> <br>mon-fri:12pm-11am;saturday and
-            sunday:closed
-          </p>
+        <div class="col-6 col-md-3 font-comforta">
+          <p><i class="fa fa-clock-o"></i> <strong>Hours</strong><br>Mon–Fri: 12pm–11am; Sat–Sun: Closed</p>
         </div>
-
-
-
-
       </div>
 
-      <div class="row">
-        <div class="col-md-6 mb-3 font-comforta">
-          <input class="form-control" type="text" placeholder="Your Name">
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input class="form-control font-comforta" type="text" placeholder="Your Name" aria-label="Your Name">
         </div>
-        <div class="col-md-6 mb-3 font-comforta">
-          <input class="form-control" type="email" placeholder="Your Email">
-
+        <div class="col-md-6">
+          <input class="form-control font-comforta" type="email" placeholder="Your Email" aria-label="Your Email">
         </div>
-        <div class="col-md-12 mb-3 font-comforta">
-          <input class="form-control" type="subject" placeholder="Subject">
-
+        <div class="col-12">
+          <input class="form-control font-comforta" type="text" placeholder="Subject" aria-label="Subject">
         </div>
-        <div class="mb-3 font-comforta">
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+        <div class="col-12">
+          <textarea class="form-control font-comforta" rows="4" placeholder="Message" aria-label="Message"></textarea>
         </div>
-        <div class="col-md-12 text-center">
-          <button class="send-btn">send message</button>
-
+        <div class="col-12 text-center">
+          <button type="button" class="send-btn">Send Message</button>
         </div>
-
-
-      </div>
+      </form>
     </div>
   </section>
 
-  <section class="footer-section">
-    <div class="text-center text-white p-2">
-      <p>By Sofi <i class="fa fa-copyright"></i>2025</p>
-
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="text-center text-white py-3 small">
+        <p class="mb-0">By Sofi <i class="fa fa-copyright"></i> 2025</p>
+      </div>
     </div>
-  </section>
+  </footer>
 
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-
-
-
-
-
-
-
+          integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+          crossorigin="anonymous"></script>
 
   <script>
+    // Owl Carousel responsive init
     $('.owl-carousel').owlCarousel({
       loop: true,
-      margin: 10,
+      margin: 16,
       nav: true,
+      dots: true,
       responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 3
-        }
+        0:   { items: 1 },
+        576: { items: 1 },
+        768: { items: 2 },
+        992: { items: 3 }
       }
-    })
-
-
+    });
   </script>
-
 </body>
-
 </html>
