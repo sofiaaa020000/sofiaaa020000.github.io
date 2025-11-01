@@ -1,0 +1,194 @@
+/* ---------- CSS Variables ---------- */
+:root{
+  --brand-dark: #1568a7;
+  --brand-mid:  #9dcce5;
+  --brand-accent: #4b76a3;
+  --brand-soft: #c5ccfa;
+  --brand-soft-2:#8c88f0;
+  --text-on-dark: #ffffff;
+  --text-on-soft: #111;
+}
+
+/* ---------- Typography ---------- */
+.font-alfa-slab{
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+}
+
+.font-comforta{
+  font-family: "Comfortaa", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+  font-weight: 400;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom: clamp(1.25rem, 2vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+/* ---------- Navbar ---------- */
+.nav-link{
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+.navbar-brand{
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.btn-book{
+  background-color: var(--brand-accent);
+  color:#fff;
+  border-radius: 999px;
+  padding: 8px 14px;
+  border: none;
+}
+.btn-book:hover{ opacity:.9; }
+
+/* ---------- Hero / Banner ---------- */
+.banner{
+  background: var(--brand-dark);
+  color: var(--text-on-dark);
+}
+.hero-text{
+  color: var(--text-on-dark);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.1;
+  /* clamp for responsive headings */
+  font-size: clamp(2rem, 5vw, 3.25rem);
+}
+
+/* Fix spacing around hero image */
+.sushi-img{
+  max-width: 100%;
+  height:auto;
+}
+
+/* ---------- About ---------- */
+.about-section{
+  background-color: var(--brand-soft);
+  padding: clamp(40px, 6vw, 72px) 0;
+}
+
+.about-text{
+  font-size: clamp(.95rem, 1.5vw, 1.0625rem);
+  color: #122; /* better contrast */
+}
+
+.check-icon{
+  font-size: 1.25rem;
+  color:#000;
+  margin-right: 8px;
+}
+
+.about-btn{
+  background-color: #fff9e6;
+  padding: 16px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  color: #111;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+.about-btn span{
+  display:block;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  margin-top: 2px;
+}
+
+/* ---------- Menu ---------- */
+.menu-section{
+  background: var(--brand-mid);
+  padding: clamp(40px, 6vw, 72px) 0;
+  color: #000;
+}
+
+.menu-card{
+  background: #fff;
+}
+
+.menu-img{
+  width: clamp(180px, 22vw, 220px);
+  height: clamp(180px, 22vw, 220px);
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,.2);
+}
+
+.menu-name{
+  font-weight: 700;
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+}
+.menu-price{
+  font-weight: 700;
+  font-size: clamp(.95rem, 1.8vw, 1.1rem);
+  opacity: .9;
+}
+
+/* ---------- Testimonials ---------- */
+.img-testimoni{
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+}
+
+.card{
+  border-radius: 24px;
+}
+
+.star{
+  font-size: 26px;
+  color: rgb(253,132,19);
+}
+.star-o{
+  font-size: 26px;
+}
+
+/* ---------- Contact ---------- */
+.contact-section{
+  background-color: var(--brand-soft-2);
+  padding: clamp(40px, 6vw, 72px) 0;
+}
+
+.contact-info{
+  font-size: clamp(.95rem, 1.5vw, 1rem);
+}
+.contact-info i{
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+.send-btn{
+  background-color: var(--brand-accent);
+  color: #fff;
+  padding: 10px 20px;
+  border:none;
+  border-radius: 12px;
+  font-weight: 600;
+}
+.send-btn:hover{ opacity:.9; }
+
+/* ---------- Footer ---------- */
+.footer-section{
+  background-color: var(--brand-mid);
+}
+
+/* ---------- Small Fixes & Utilities ---------- */
+img{ max-width:100%; display:block; }
+
+/* Center hero text a bit on small screens */
+@media (max-width: 575.98px){
+  .hero-text{ text-align:center; }
+}
+
+/* Improve navbar spacing on md+ */
+@media (min-width: 768px){
+  .nav-link{ font-size: 1.05rem; }
+}
+
+/* Reduce about paragraph width for readability on xl */
+@media (min-width: 1200px){
+  .about-section .about-text{ max-width: 48ch; }
+}
